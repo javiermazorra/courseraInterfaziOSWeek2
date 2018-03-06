@@ -17,7 +17,8 @@
 		1E4F401F204EEF3100BC3308 /* DoughTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4F4017204EEF3100BC3308 /* DoughTypeViewController.swift */; };
 		1E4F4021204EEFAC00BC3308 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E4F4020204EEFAC00BC3308 /* Main.storyboard */; };
 		1E4F4023204EEFC100BC3308 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E4F4022204EEFC100BC3308 /* LaunchScreen.storyboard */; };
-		1E4F4025204EF0F900BC3308 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1E4F4024204EF0F900BC3308 /* Info.plist */; };
+		6C06376D204F4C65003B6260 /* ConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C06376C204F4C65003B6260 /* ConfirmationViewController.swift */; };
+		6C06376F204F5409003B6260 /* FinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C06376E204F5409003B6260 /* FinishViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,8 @@
 		1E4F4020204EEFAC00BC3308 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		1E4F4022204EEFC100BC3308 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E4F4024204EF0F900BC3308 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C06376C204F4C65003B6260 /* ConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationViewController.swift; sourceTree = "<group>"; };
+		6C06376E204F5409003B6260 /* FinishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +74,8 @@
 				1E4F4017204EEF3100BC3308 /* DoughTypeViewController.swift */,
 				1E4F4016204EEF3100BC3308 /* CheeseSelectionViewController.swift */,
 				1E4F4014204EEF3100BC3308 /* IngredientsSelectionViewController.swift */,
+				6C06376C204F4C65003B6260 /* ConfirmationViewController.swift */,
+				6C06376E204F5409003B6260 /* FinishViewController.swift */,
 				1E4F4020204EEFAC00BC3308 /* Main.storyboard */,
 				1E4F4022204EEFC100BC3308 /* LaunchScreen.storyboard */,
 				1E4F4005204EEEB800BC3308 /* Assets.xcassets */,
@@ -140,7 +145,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E4F4025204EF0F900BC3308 /* Info.plist in Resources */,
 				1E4F4006204EEEB800BC3308 /* Assets.xcassets in Resources */,
 				1E4F4023204EEFC100BC3308 /* LaunchScreen.storyboard in Resources */,
 				1E4F4021204EEFAC00BC3308 /* Main.storyboard in Resources */,
@@ -156,10 +160,12 @@
 			files = (
 				1E4F401E204EEF3100BC3308 /* CheeseSelectionViewController.swift in Sources */,
 				1E4F401F204EEF3100BC3308 /* DoughTypeViewController.swift in Sources */,
+				6C06376F204F5409003B6260 /* FinishViewController.swift in Sources */,
 				1E4F401A204EEF3100BC3308 /* ViewController.swift in Sources */,
 				1E4F4018204EEF3100BC3308 /* AppDelegate.swift in Sources */,
 				1E4F4019204EEF3100BC3308 /* PizzaOptions.swift in Sources */,
 				1E4F401B204EEF3100BC3308 /* SizeChooserViewController.swift in Sources */,
+				6C06376D204F4C65003B6260 /* ConfirmationViewController.swift in Sources */,
 				1E4F401C204EEF3100BC3308 /* IngredientsSelectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

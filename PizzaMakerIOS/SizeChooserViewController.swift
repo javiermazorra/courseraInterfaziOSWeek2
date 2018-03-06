@@ -34,7 +34,7 @@ class SizeChooserViewController: UIViewController, UIPickerViewDelegate, UIPicke
   }
   
   @IBAction func `continue`(_ sender: Any) {
-    PizzaOptions.pizzaSize = sizeSelected ?? "mediana"
+    PizzaOptions.shared.pizzaSize = sizeSelected ?? "mediana"
     performSegue(withIdentifier: "showSize", sender: sender)
   }
   

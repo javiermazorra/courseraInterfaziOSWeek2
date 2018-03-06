@@ -10,8 +10,10 @@ import Foundation
 
 class PizzaOptions: NSObject {
   
-  static var pizzaSize:String = ""
-  static var pizzaDough:String = ""
-  static var cheeseType:String = ""
-  static var pizzaIngredients:[String] = [String]()
+  static let shared = PizzaOptions.init()
+  
+  var pizzaSize:String = ""
+  var pizzaDough:String = ""
+  var cheeseType:String = ""
+  var pizzaIngredients:[String] = [String]()
 }

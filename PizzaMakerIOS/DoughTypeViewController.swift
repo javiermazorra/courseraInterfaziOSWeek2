@@ -20,12 +20,12 @@ class DoughTypeChooserViewController: UIViewController, UIPickerViewDelegate, UI
     doughPicker.dataSource = self
     // Do any additional setup after loading the view, typically from a nib.
     pickerData = ["delgada", "crujiente", "gruesa"]
+    doughPicker.selectRow(1, inComponent: 0, animated: true)
   }
   
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(true)
-
-    doughPicker.selectRow(1, inComponent: 0, animated: true)
+    doughSelected = pickerData[1]
   }
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
@@ -33,7 +33,7 @@ class DoughTypeChooserViewController: UIViewController, UIPickerViewDelegate, UI
   }
   
   @IBAction func `continue`(_ sender: Any) {
-    PizzaOptions.pizzaSize = doughSelected ?? "crujiente"
+    PizzaOptions.shared.pizzaDough = doughSelected ?? "crujiente"
     performSegue(withIdentifier: "showCheese", sender: sender)
   }
   

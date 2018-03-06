@@ -20,12 +20,12 @@ class CheeseSelectionViewController: UIViewController, UIPickerViewDelegate, UIP
     cheesePicker.dataSource = self
     // Do any additional setup after loading the view, typically from a nib.
     pickerData = ["mozarela", "cheddar", "parmesano", "sin queso"]
+    cheesePicker.selectRow(0, inComponent: 0, animated: true)
   }
   
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(true)
-    
-    cheesePicker.selectRow(0, inComponent: 0, animated: true)
+    cheeseSelected = pickerData[0]
   }
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
@@ -33,6 +33,7 @@ class CheeseSelectionViewController: UIViewController, UIPickerViewDelegate, UIP
   }
   
   @IBAction func `continue`(_ sender: Any) {
+    PizzaOptions.shared.cheeseType = cheeseSelected ?? "mozarela"
     performSegue(withIdentifier: "showIngredients", sender: sender)
   }
   
